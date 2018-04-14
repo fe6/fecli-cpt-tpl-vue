@@ -7,13 +7,16 @@ install:
   - yarn install
 
 script:
+  - npm install codecov -g
   - yarn test
-  - npm run codecov
 
 cache:
   yarn: true
   directories:
     - "node_modules"
+
+after_success:
+  - codecov
 
 branches:
   only:
