@@ -7,7 +7,8 @@
     "ve": "vuetype example",
     "start": "fe6vc s",
     "build": "fe6vc b",
-    "test": "jest"
+    "test": "jest",
+    "codecov": "codecov"
   },
   "repository": {
     "type": "git",
