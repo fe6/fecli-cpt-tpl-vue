@@ -9,6 +9,10 @@ describe('HelloWorld.vue', () => {
     wrapper = mount(HelloWorld);
   });
 
+  it("属性名字是否是 foo", () => {
+    expect(new HelloWorld().name).toBe('foo');
+  });
+
   it("updates the .textContent to 'foo!'", done => {
     wrapper.vm.$nextTick(() => {
       try {
