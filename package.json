@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Vue.js 组件脚手架 fecli 的模板",
   "scripts": {
-    "type": "vuetype example && vuetype src",
+    "vs": "vuetype src",
+    "ve": "vuetype example",
     "start": "fe6vc s",
     "build": "fe6vc b",
     "build1": "webpack -w --config build/webpack.config.js"
