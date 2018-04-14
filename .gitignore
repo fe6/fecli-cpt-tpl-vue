@@ -24,3 +24,4 @@ test/unit/coverage
 $Recycle.Bin
 dist/
 .cache*
+coverage
