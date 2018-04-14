@@ -7,7 +7,7 @@
     "ve": "vuetype example",
     "start": "fe6vc s",
     "build": "fe6vc b",
-    "build1": "webpack -w --config build/webpack.config.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,9 @@
   },
   "homepage": "https://github.com/fe6/fecli-cpt-tpl-vue#readme",
   "dependencies": {
+    "@types/jest": "^22.2.3",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
     "cache-loader": "^1.2.2",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
@@ -42,6 +44,7 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
     "node-sass": "^4.8.3",
     "postcss-cssnext": "^3.1.0",
     "postcss-initial": "^2.0.0",
@@ -51,20 +54,36 @@
     "postcss-nested-props": "^2.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
+    "ts-jest": "^22.4.2",
     "ts-loader": "^4.2.0",
     "tslint": "^5.9.1",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.8.1",
     "vue": "^2.5.16",
     "vue-class-component": "^6.2.0",
+    "vue-jest": "^2.5.0",
     "vue-loader": "^14.2.2",
     "vue-property-decorator": "^6.0.0",
     "vue-template-compiler": "^2.5.16",
+    "vue-test-utils": "^1.0.0-beta.11",
     "vuetype": "^0.3.2",
     "webpack": "^4.5.0",
     "webpack-dev-server": "^3.1.3"
   },
   "devDependencies": {
     "webpack-cli": "^2.0.14"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue",
+      "ts"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest",
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest",
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
   }
 }
