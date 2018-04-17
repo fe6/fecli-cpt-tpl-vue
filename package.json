@@ -8,6 +8,8 @@
     "start": "fe6vc s",
     "build": "fe6vc b",
     "test": "jest",
+    "lint": "fe6vc l",
+    "lint-staged": "lint-staged",
     "codecov": "codecov ./coverage/clover.xml"
   },
   "repository": {
@@ -49,6 +51,7 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
+    "lint-staged": "^7.0.4",
     "node-sass": "^4.8.3",
     "postcss-cssnext": "^3.1.0",
     "postcss-initial": "^2.0.0",
@@ -56,6 +59,7 @@
     "postcss-nested": "^3.0.0",
     "postcss-nested-ancestors": "^2.0.0",
     "postcss-nested-props": "^2.0.0",
+    "pre-commit": "^1.2.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
     "ts-jest": "^22.4.2",
@@ -91,5 +95,19 @@
     },
     "collectCoverage": true,
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
-  }
+  },
+  "lint-staged": {
+    "component/**/*.vue": [
+      "npm run lint"
+    ],
+    "component/**/*.ts": [
+      "npm run lint"
+    ],
+    "style/**/*.scss": [
+      "npm run lint"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ]
 }

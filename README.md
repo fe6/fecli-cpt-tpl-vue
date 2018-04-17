@@ -4,8 +4,8 @@
 ## 使用
 
 ```
-$ fe6vc server
-$ fe6vc build
+$ npm start
+$ npm run build
 ```
 
 ## 命令的功能
