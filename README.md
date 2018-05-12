@@ -1,4 +1,6 @@
 # fecli-cpt-tpl-vue
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/fe6/fecli-cpt-tpl-vue.svg)](https://greenkeeper.io/)
 >Vue.js 组件脚手架 fecli 的模板
 
 ## 使用
