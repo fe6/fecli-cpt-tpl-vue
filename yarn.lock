@@ -141,6 +141,11 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
+"@snyk/protect@^1.1166.0":
+  version "1.1166.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1166.0.tgz#ea4e1773eda0fce58c5d3831ed467de4e3a36eee"
+  integrity sha512-M2uSZpeHKCdVVymNLRBta1UHnSICrqLC5VHqvfxtUms28HAE9FYKyUc0wK8iEmfRVif/ldXnbKkyc9hq/bIQJA==
+
 "@types/jest@^22.2.3":
   version "22.2.3"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.2.3.tgz#0157c0316dc3722c43a7b71de3fdf3acbccef10d"
